@@ -1,0 +1,510 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**  Reset para REMS -62.5% = 10px de 16px  **/
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 95%;
+}
+
+
+/** --------------------------utilidades----------------------*/
+
+.animacion-arriba {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animacion-arriba-servicios {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animacion-abajo {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animacion-abajo-servicios {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.animacion-derecha {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.mostrar-arriba {
+    animation: mostrar-arriba 1s;
+}
+
+@keyframes mostrar-arriba {
+    0% {
+        transform: translateY(7rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mostrar-abajo {
+    animation: mostrar-abajo 1s;
+}
+
+@keyframes mostrar-abajo {
+    0% {
+        transform: translateY(-7rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mostrar-derecha {
+    animation: mostrar-derecha 0.5s;
+}
+
+@keyframes mostrar-derecha {
+    0% {
+        transform: translateX(9rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+
+/**  ---------------------------header------------------------*/
+
+.header {
+    background-color: #252525;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .6rem;
+    background-color: #c2bf2d;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 12rem;
+    position: absolute;
+    background-image: url(../img/logo.jpeg);
+    background-color: #c2bf2d;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 3rem;
+    height: 8.3rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem #c2bf2d;
+    border-radius: 5%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -12rem;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .barra {
+        height: 6rem;
+    }
+}
+
+.nav a {
+    color: #dfdfdf;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 2rem 3rem 2rem 3rem;
+    transition: 0.3s;
+}
+
+.nav a:first-of-type {
+    margin-left: 22rem;
+}
+
+.nav a:hover {
+    color: #ffff;
+    background-color: #b1af4d80;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .redes {
+        display: none;
+    }
+}
+
+.redes a {
+    color: #dfdfdf;
+    font-size: 2.5rem;
+    margin-right: 15rem;
+    transition: 0.2s;
+}
+
+.facebook a:hover {
+    color: #387fb9;
+    font-size: 3rem;
+}
+
+.instagram a:hover {
+    color: rgb(148, 38, 133);
+    font-size: 3rem;
+}
+
+.whatsapp a:hover {
+    color: #34c447;
+    font-size: 3rem;
+}
+
+
+/* --------------------------------------------- banner --------------------*/
+
+.banner {}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/construccion.jpg);
+    background-blend-mode: soft-light;
+    background-color: rgb(100, 100, 100);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container-img {
+        height: 85vh;
+    }
+}
+
+.befall h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    color: #dfdfdf;
+}
+
+@media (max-width: 768px) {
+    .befall h1 {
+        font-size: 9rem;
+        text-align: center;
+    }
+}
+
+.texto-baner {
+    padding-bottom: 15rem;
+}
+
+.slogan h2 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #dfdfdf;
+}
+
+@media (max-width: 768px) {
+    .slogan h2 {
+        font-size: 3rem;
+    }
+}
+
+.container-sa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252525;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 9rem;
+}
+
+.texto-sa {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 3rem;
+    color: #dfdfdf;
+    line-height: 2.7rem;
+    letter-spacing: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .texto-sa {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* --------------------------------------- por que elegirnos ---------------------------*/
+
+.elegirnos {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos h3 {
+    text-transform: uppercase;
+}
+
+.iconos {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+    padding: 0 5rem;
+    font-size: 1.7rem;
+}
+
+.icono {
+    color: #c92222;
+    font-size: 6rem;
+}
+
+
+/* ---------------------------------------------------------No importa la ubicacion ---------------------------*/
+
+.container-ubicacion {
+    background-color: #094d49;
+    display: flex;
+    height: 23rem;
+}
+
+.texto-ubicacion h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: 25rem;
+    margin-top: 5rem;
+}
+
+.parrafo-ubicacion {
+    width: 40rem;
+}
+
+.texto-ubicacion p {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-left: 25rem;
+}
+
+.texto-ubicacion span {
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-left: 25rem;
+}
+
+.mapa {
+    position: absolute;
+}
+
+.mapa img {
+    transform: rotate(20deg);
+    margin-left: 85rem;
+    margin-top: -9rem;
+    height: 40rem;
+}
+
+
+/** --------------------------------------------------------- Logo con contacto -----------------------------------------------*/
+
+.logo-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 20rem;
+}
+
+.container-logo-2 {
+    position: relative;
+    margin-left: 5rem;
+    height: 35rem;
+    flex-basis: 70rem;
+    background-image: url(../Images/logotipo-genérico.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-logo-texto ul {
+    color: black;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+
+/* --------------------------- Servicios -----------------------*/
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Images/business.jpg);
+    background-blend-mode: soft-light;
+    background-color: rgb(209, 211, 207);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios h1 {
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+.texto-servicios {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-left: 32rem;
+    margin-right: 32rem;
+}
+
+.icono-servicios {
+    background-color: rgb(100, 100, 100);
+    border-radius: 50%;
+    color: black;
+    font-size: 6rem;
+    margin: auto;
+    padding: auto;
+    width: 12rem;
+    height: 12rem;
+}
+
+.icono-servicios i {
+    padding-top: 2.2rem;
+}
+
+
+/* -------------------------------------- Formulario ------------------*/
+
+.contenedor-formulario {
+    text-align: center;
+    height: 30rem;
+}
+
+.contenedor-formulario h1 {
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+
+.contenedor-formulario p {
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.a {
+    margin: 4rem;
+}
+
+.a label {
+    font-size: 1.8rem;
+    display: block;
+}
+
+.a input {
+    width: 30rem;
+    height: 5rem;
+}
+
+.boton {
+    display: flex;
+    position: absolute;
+    margin-top: 15rem;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: #094d49;
+    width: 18rem;
+    height: 3.5rem;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    width: 19rem;
+    height: 3.8rem;
+    background-color: #073d24;
+}
+
+.btn:active {
+    background-color: #30e99fa1;
+}
+
+
+/* -------------------------------------------- footer ---------------*/
+
+.site-footer {
+    display: flex;
+    background-color: #094d49;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 6rem;
+}
+
+.copyright {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+}
+
+.firma {
+    color: white;
+    font-size: 1rem;
+}
