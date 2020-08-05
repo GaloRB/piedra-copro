@@ -58,7 +58,7 @@ function mostrarScroll2() {
     let scrollTop = document.documentElement.scrollTop;
     for (var i = 0; i < animacionDerecha.length; i++) {
         let alturaanimacion = animacionDerecha[i].offsetTop;
-        if (alturaanimacion - 400 < scrollTop) {
+        if (alturaanimacion - 500 < scrollTop) {
             animacionDerecha[i].style.opacity = 1;
             animacionDerecha[i].classList.add("mostrar-derecha");
         }

@@ -12,10 +12,15 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #f0eeee;
 }
 
 img {
     max-width: 95%;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -83,6 +88,24 @@ img {
     100% {
         transform: translateX(0rem);
     }
+}
+
+.btn {
+    display: block;
+    color: white;
+    background-color: #3f3f37;
+    margin-top: 5rem;
+    padding: 1.5rem 3rem;
+    border: 50% solid #ffffff;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #aca926;
+}
+
+.btn:active {
+    background-color: #3f3e0dd3;
 }
 
 
@@ -194,8 +217,6 @@ img {
 
 /* --------------------------------------------- banner --------------------*/
 
-.banner {}
-
 .container-img {
     display: flex;
     flex-direction: column;
@@ -212,20 +233,24 @@ img {
 
 @media (max-width: 768px) {
     .container-img {
-        height: 85vh;
+        height: 80vh;
     }
 }
 
-.befall h1 {
+.piedracopro h1 {
     font-size: 10rem;
     font-weight: 700;
     color: #dfdfdf;
 }
 
 @media (max-width: 768px) {
-    .befall h1 {
-        font-size: 9rem;
+    .piedracopro h1 {
+        font-size: 5rem;
         text-align: center;
+        margin-top: 17rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: #dfdfdfd5;
     }
 }
 
@@ -242,7 +267,7 @@ img {
 
 @media (max-width: 768px) {
     .slogan h2 {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -251,7 +276,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #252525;
+    background-color: #3f3f37;
     font-size: 1.8rem;
     width: 100%;
     height: 9rem;
@@ -269,7 +294,8 @@ img {
 
 @media (max-width: 768px) {
     .texto-sa {
-        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 2rem;
     }
 }
@@ -283,9 +309,11 @@ img {
     margin: 5rem;
 }
 
-.iconos-nosotros {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .iconos h3 {
@@ -297,10 +325,11 @@ img {
     text-align: center;
     padding: 0 5rem;
     font-size: 1.7rem;
+    margin-bottom: 3rem;
 }
 
 .icono {
-    color: #c92222;
+    color: #dbd802;
     font-size: 6rem;
 }
 
@@ -308,119 +337,77 @@ img {
 /* ---------------------------------------------------------No importa la ubicacion ---------------------------*/
 
 .container-ubicacion {
-    background-color: #094d49;
-    display: flex;
-    height: 23rem;
+    background-color: #3f3f37;
+    height: 38rem;
+    color: white;
 }
 
-.texto-ubicacion h1 {
-    color: white;
-    font-size: 4rem;
-    font-weight: 500;
-    margin-left: 25rem;
-    margin-top: 5rem;
+@media (min-width: 768px) {
+    .container-ubicacion {
+        display: flex;
+        justify-content: space-between;
+        height: 35rem;
+    }
+}
+
+.texto-ubicacion {
+    text-align: center;
+}
+
+.texto-ubicacion h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .texto-ubicacion {
+        padding-top: 5rem;
+        text-align: center;
+    }
+    .texto-ubicacion h3 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
 }
 
 .parrafo-ubicacion {
-    width: 40rem;
+    font-size: 2rem;
+    font-weight: 200;
 }
 
-.texto-ubicacion p {
-    color: white;
-    font-size: 1.7rem;
-    font-weight: 200;
-    margin-left: 25rem;
-}
-
-.texto-ubicacion span {
-    color: white;
-    font-size: 1rem;
-    font-weight: 200;
-    margin-left: 25rem;
+@media (min-width: 768px) {
+    .parrafo-ubicacion {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-left: 2rem;
+    }
 }
 
 .mapa {
-    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .mapa img {
-    transform: rotate(20deg);
-    margin-left: 85rem;
-    margin-top: -9rem;
-    height: 40rem;
+    transform: rotate(30deg);
+    max-width: 50%;
 }
 
-
-/** --------------------------------------------------------- Logo con contacto -----------------------------------------------*/
-
-.logo-contacto {
-    display: flex;
-    justify-content: space-between;
-    margin: 5rem 20rem;
-}
-
-.container-logo-2 {
-    position: relative;
-    margin-left: 5rem;
-    height: 35rem;
-    flex-basis: 70rem;
-    background-image: url(../Images/logotipo-genérico.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container-logo-texto ul {
-    color: black;
-    margin-right: 7rem;
-    margin-left: 7rem;
-    font-size: 2.5rem;
-    font-weight: 200;
+@media (min-width: 768px) {
+    .mapa {
+        display: block;
+        position: absolute;
+    }
+    .mapa img {
+        max-width: 80%;
+        margin-left: 85rem;
+        margin-top: -10rem;
+    }
 }
 
 
 /* --------------------------- Servicios -----------------------*/
-
-.servicios {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../Images/business.jpg);
-    background-blend-mode: soft-light;
-    background-color: rgb(209, 211, 207);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.servicios h1 {
-    margin-top: 1rem;
-    font-size: 4rem;
-}
-
-.texto-servicios {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.7rem;
-    margin-left: 32rem;
-    margin-right: 32rem;
-}
-
-.icono-servicios {
-    background-color: rgb(100, 100, 100);
-    border-radius: 50%;
-    color: black;
-    font-size: 6rem;
-    margin: auto;
-    padding: auto;
-    width: 12rem;
-    height: 12rem;
-}
-
-.icono-servicios i {
-    padding-top: 2.2rem;
-}
 
 
 /* -------------------------------------- Formulario ------------------*/
@@ -456,32 +443,6 @@ form {
 .a input {
     width: 30rem;
     height: 5rem;
-}
-
-.boton {
-    display: flex;
-    position: absolute;
-    margin-top: 15rem;
-}
-
-.btn {
-    border: none;
-    color: white;
-    background-color: #094d49;
-    width: 18rem;
-    height: 3.5rem;
-    transition: 0.4s;
-}
-
-.btn:hover {
-    cursor: pointer;
-    width: 19rem;
-    height: 3.8rem;
-    background-color: #073d24;
-}
-
-.btn:active {
-    background-color: #30e99fa1;
 }
 
 
