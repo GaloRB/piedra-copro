@@ -685,7 +685,7 @@
     }
     
     fieldset {
-        margin: auto 4rem;
+        margin: auto 2rem;
         border: 2px solid #c2bf2d;
     }
     
@@ -765,6 +765,11 @@
         font-size: 2rem;
         padding-bottom: 2rem;
         text-align: center;
+    }
+    
+    .direccion {
+        margin-right: 5rem;
+        margin-left: 5rem;
     }
     
     .redes-footer {
