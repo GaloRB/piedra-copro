@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+
     <header class="header">
         <div class="container-logo">
             <div class="logo">
@@ -35,7 +37,27 @@
                 <div class="instagram"><a href="#"><i class="fab fa-instagram-square"></i></a></div>
                 <div class="whatsapp"><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
             </div>
+            <div class="menu">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><i class="fas fa-bars" id="bt"></i>
+                <i class="fas fa-times" id="cancel"></i></label>
+                <div class="nav-mobile">
+
+
+                    <div class="header-menumobile">
+                        <p>Menú</p>
+                    </div>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </header>
 
     <section class="banner">
@@ -58,7 +80,35 @@
     </section>
 
 
+    <main class="contenedor-main">
 
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios">
+
+            <div class="card-servicios dos">
+                <img src="img/construccion3.jpeg" alt="foto-de-constuccion">
+                <h3>Construcción</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere maiores odit ex quod, aperiam, deleniti facilis aut, quam neque tenetur ipsam nesciunt sapiente. Animi laudantium odit natus officia. Beatae!</p>
+                <a href="#" class="btn-servicios">Ver Más</a>
+            </div>
+
+            <div class="card-servicios dos">
+                <img src="img/remodelacion1.jpeg" alt="foto-de-constuccion">
+                <h3>Remodelación</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere maiores odit ex quod, aperiam, deleniti facilis aut, quam neque tenetur ipsam nesciunt sapiente. Animi laudantium odit natus officia. Beatae!</p>
+                <a href="#" class="btn-servicios">Ver Más</a>
+            </div>
+
+            <div class="card-servicios dos">
+                <img src="img/mantenimietno1.jpeg" alt="foto-de-constuccion">
+                <h3>Mantenimietno</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere maiores odit ex quod, aperiam, deleniti facilis aut, quam neque tenetur ipsam nesciunt sapiente. Animi laudantium odit natus officia. Beatae!</p>
+                <a href="#" class="btn-servicios">Ver Más</a>
+            </div>
+
+        </div>
+
+    </main>
 
 
     <section class="elegirnos">
@@ -107,45 +157,69 @@
     </div>
 
 
-    <!--
-    
+
+
     <div class="contenedor-formulario">
-        <h1>¡AUMENTA TU COMPETITIVIDAD Y AHORRA RECURSOS!</h1>
-        <p>Si tienes alguna duda, ponte en contacto con nosotros. O bien, déjanos tus datos aquí abajo y nosotros nos ponemos en contacto contigo.</p>
+        <h4>!Pide tu cotizacion o solicita una cita!</h4>
+        <form action="" method="">
+            <fieldset>
+                <legend>Información de contácto</legend>
 
-        <form action="">
-            <div class="a">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
-            </div>
 
-            <div class="a">
-                <label for="tel">Teléfono:</label>
-                <input type="tel" name="tel" id="tel" placeholder="Escribe tu teléfono" required>
-            </div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
 
-            <div class="a">
-                <label for="correo">Correo:</label>
-                <input type="email" name="correo" id="correo" placeholder="Escribe tu correo">
-            </div>
-            <div class="boton">
-                <input type="submit" value="Enviar" class="btn">
-            </div>
+
+
+                <label for="apellido">Primer apellido: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escribe tu primer apellido">
+
+
+
+                <label for="numero">Número telefónico: </label>
+                <input type="tel" name="tel" id="tel" placeholder="Escribe tu número">
+
+
+
+
+                <label for="email">Correo Electronico: </label>
+                <input type="email" name="email" id="emal" placeholder="Escribe tu correo">
+
+
+
+                <label for="mensaje">Escribe un breve mensaje si necesitas una cita o cotizacion: </label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+
+
+            </fieldset>
         </form>
     </div>
 
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <h5>PIEDRA COPORO-CONSTRUCCIÓN REMODELACIÓN Y MANTENIMIENTO</h5>
+            <h5>SERVICIOS</h5>
+            <ul>
+                <li><a href="#">Construcción</a></li>
+                <li><a href="#">Remodelación</a></li>
+                <li><a href="#">Mantenimietno</a></li>
+            </ul>
+            <h5>Dirección</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore aliquid quidem libero animi sed? Asperiores maiores, amet rem laboriosam accusantium </p>
+            <h5>Contácto</h5>
+            <p>Tel: 722558899</p>
+            <p>Correo: piedracopro@gmail.com</p>
 
+            <div class="copyright">
+                <p>Todos los derechos reservados 2020 &copy;</p>
+                <p>Desarrollado por GaloRB</p>
+            </div>
 
+        </div>
 
-
-
-    <footer class="site-footer">
-        <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
-        <p class="firma">Desarrollado por GaloRB</p>
     </footer>
 
 
--->
     <script src="js/app.js"></script>
 </body>
 
