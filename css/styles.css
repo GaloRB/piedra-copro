@@ -884,10 +884,6 @@
     .nosotros p {
         font-size: 2rem;
     }
-    
-    .nosotros p {
-        font-size: 3rem;
-    }
     /* -------------------------- mision --------------------*/
     
     .contenedor-mision {
@@ -987,6 +983,7 @@
         text-align: center;
         font-size: 2rem;
         font-weight: 600;
+        margin: 2rem 4rem;
     }
     
     @media (min-width: 768px) {
