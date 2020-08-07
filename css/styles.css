@@ -754,6 +754,12 @@
         padding-top: 3rem;
     }
     
+    @media (min-width: 768px) {
+        .ul {
+            margin-right: 4rem;
+        }
+    }
+    
     .contenedor-footer h5 {
         font-size: 2rem;
         text-align: center;
@@ -1154,5 +1160,33 @@
         }
         100% {
             margin-left: -300%;
+        }
+    }
+    
+    .titulo-servicios-remodelacion {
+        font-size: 2rem;
+        text-align: center;
+        border-bottom: 2px solid #d6b10a;
+    }
+    
+    @media (min-width: 768px) {
+        .titulo-servicios-remodelacion {
+            font-size: 3rem;
+            margin-top: 15rem;
+        }
+    }
+    
+    .titulo-servicios-mantenimiento {
+        font-size: 2rem;
+        text-align: center;
+        border-bottom: 2px solid #6d6d6d;
+    }
+    
+    @media (min-width: 768px) {
+        .contenedor-espacio {
+            margin-bottom: 40rem;
+        }
+        .form-serv {
+            margin-top: -100rem;
         }
     }
