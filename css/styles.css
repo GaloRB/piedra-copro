@@ -163,6 +163,7 @@ ul {
 
 @media (min-width: 770px) {
     .btn-servicios {
+        font-size: 1.5rem;
         margin: 0 auto;
     }
     .btn-servicios:hover {
@@ -176,6 +177,13 @@ ul {
 @media (min-width: 771px) and (max-width: 1280px) {
     .btn-servicios {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+    .btn-servicios {
+        font-size: 1.1rem;
+        padding: 2rem;
     }
 }
 
@@ -542,15 +550,35 @@ label #cancel {
 
 .card-servicios {
     margin: 4rem;
-    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.card-const {
+    border: 8px ridge rgba(5, 5, 5, 0.911);
+    background-color: rgba(37, 36, 36, 0.808);
+}
+
+.card-rem {
+    border: 8px ridge rgba(238, 182, 28, 0.733);
+    background-color: rgba(228, 190, 88, 0.733);
+    ;
+}
+
+.card-mant {
+    border: 8px ridge #6d6d6de5;
+    background-color: #949494c2;
+}
+
+.card-rel {
+    border: 8px ridge #af2e07e5;
+    background-color: #be4723d8;
+}
+
 @media (min-width: 770px) {
     .card-servicios {
-        flex: 1 1 calc(33.3% - 1rem);
+        flex: 1 1 calc(20% - 1rem);
     }
     .dos {
         display: block;
@@ -582,11 +610,27 @@ label #cancel {
 @media (min-width: 770px) {
     .card-servicios h3 {
         font-size: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+    .card-servicios h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+    .card-servicios h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
     }
 }
 
 .card-servicios p {
+    color: black;
     font-size: 1.8rem;
     text-align: center;
     padding-left: 2rem;
@@ -596,15 +640,22 @@ label #cancel {
 
 @media (min-width: 770px) {
     .card-servicios p {
-        font-size: 2rem;
-        margin-bottom: 6rem;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
     }
 }
 
 @media (min-width: 771px) and (max-width: 1280px) {
     .card-servicios p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+    .card-servicios p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
