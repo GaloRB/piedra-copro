@@ -259,12 +259,21 @@ ul {
     color: #dfdfdf;
     text-decoration: none;
     font-size: 1.7rem;
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem 3rem;
     transition: 0.3s;
 }
 
 .nav a:first-of-type {
     margin-left: 22rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+    .nav a {
+        padding: 2rem 2rem;
+    }
+    .nav a:first-of-type {
+        margin-left: 15rem;
+    }
 }
 
 .nav a:hover {
@@ -293,6 +302,12 @@ ul {
     font-size: 2.5rem;
     margin-right: 15rem;
     transition: 0.2s;
+}
+
+@media (min-width: 1024px) and (max-width: 1026px) {
+    .redes a {
+        margin-right: 10rem;
+    }
 }
 
 .facebook a:hover {
@@ -1167,6 +1182,9 @@ footer {
     .contendor-serv ul {
         margin: 7rem 10rem;
     }
+    .contendor-serv ul {
+        font-size: 2.5rem;
+    }
 }
 
 .contendor-serv li {
@@ -1309,4 +1327,77 @@ footer {
     .form-serv {
         margin-top: 40rem;
     }
+}
+
+
+/* ------------------------- contacto --------------------*/
+
+.contactanos {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    background-image: url(../img/imagen-contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-color: rgb(44, 44, 44);
+    height: 50vh;
+    padding-top: 12rem;
+}
+
+@media (min-width: 770px) {
+    .contactanos {
+        height: 60vh;
+        background-attachment: fixed;
+    }
+}
+
+.contactanos h2 {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #c2bf2d;
+}
+
+@media (min-width: 770px) {
+    .contactanos h2 {
+        font-size: 7rem;
+        padding-top: 3rem;
+        letter-spacing: 0.5rem;
+        margin-left: 25rem;
+        margin-right: 25rem;
+    }
+}
+
+.informacion-contacto {
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (min-width: 770px) {
+    .informacion-contacto {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+.informacion-contacto h4 {
+    font-size: 3rem;
+}
+
+.informacion-contacto h4:first-of-type {
+    font-size: 3rem;
+    border-bottom: 2px solid #c2bf2d;
+}
+
+@media (min-width: 770px) {
+    .informacion-contacto h4 {
+        font-size: 5rem;
+    }
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    margin: auto 2rem;
 }
